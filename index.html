@@ -2,7 +2,7 @@
 <html>
 <head>
 <p style="font-family:'Courier New'">Welcome to GeorgePass!</p>
-  <input type="button" value="Reload Page" onClick="reload">
+  <input type="button" value="Close Page" onClick="Close">
 </head>
 <body>
 
@@ -58,7 +58,21 @@ body {
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-3s4cHu6Wy-uh0h5aG2eqq0QYizO3OsfYT0tI1xXbHM4kQw/viewform?embedded=true" width="1000" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
+<html>
+<body>
+<p style="color:red">Random Number Generator - DM Melv1n#0536 on Discord with your Random Number (After you submit the form)</p>
 
+  <p id="one"></p>
+<button onclick="random()">Random</button>
+
+<script>
+ function random(){
+
+document.getElementById("one").innerHTML = Math.floor(Math.random() * 10);
+}
+</script>
+
+</body>
 
 
 
